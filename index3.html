@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Development Showcase</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Modern Web Development Showcase</h1>
+          <p class="subtitle">
+            Demonstrating responsive design, interactive components, and API
+            integration
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-badge">📱 Responsive Design</div>
+            <div class="feature-badge">🎠 JavaScript Carousel</div>
+            <div class="feature-badge">⚡ API Integration</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Responsive Design Demo -->
+        <section class="section fade-in">
+          <div class="card">
+            <h2>Responsive Design with Media Queries</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666">
+              This layout adapts seamlessly across all devices using CSS media
+              queries
+            </p>
+
+            <div class="responsive-demo">
+              <div class="device-showcase">
+                <div class="device">
+                  <h3>📱 Mobile</h3>
+                  <p>≤767px</p>
+                  <p>Single column layout optimized for touch interaction</p>
+                </div>
+                <div class="device">
+                  <h3>📱 Tablet</h3>
+                  <p>768px - 1023px</p>
+                  <p>Two-column layout with touch-friendly navigation</p>
+                </div>
+                <div class="device">
+                  <h3>🖥 Desktop</h3>
+                  <p>≥1024px</p>
+                  <p>Multi-column layout with hover interactions</p>
+                </div>
+              </div>
+
+              <div
+                style="
+                  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+                  padding: 2rem;
+                  border-radius: 15px;
+                  text-align: center;
+                "
+              >
+                <h3 style="margin-bottom: 1rem">Live Responsive Demo</h3>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.25rem)">
+                  This text and layout scales automatically based on your screen
+                  size!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Image Carousel -->
+        <section class="section fade-in">
+          <div class="card">
+            <h2>Interactive Image Carousel</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666">
+              Navigate through beautiful images with JavaScript controls
+            </p>
+
+            <div class="carousel-container">
+              <div class="carousel" id="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                  <div class="carousel-slide">
+                    <img
+                      src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="Mountain Landscape"
+                    />
+                  </div>
+                  <div class="carousel-slide">
+                    <img
+                      src="https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="Ocean Sunset"
+                    />
+                  </div>
+                  <div class="carousel-slide">
+                    <img
+                      src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="Forest Path"
+                    />
+                  </div>
+                  <div class="carousel-slide">
+                    <img
+                      src="https://images.pexels.com/photos/1484771/pexels-photo-1484771.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="City Lights"
+                    />
+                  </div>
+                  <div class="carousel-slide">
+                    <img
+                      src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      alt="Desert Dunes"
+                    />
+                  </div>
+                </div>
+
+                <button class="carousel-nav prev" id="prevBtn">‹</button>
+                <button class="carousel-nav next" id="nextBtn">›</button>
+
+                <div class="carousel-indicators" id="indicators"></div>
+
+                <div class="carousel-info">
+                  <div class="carousel-title" id="carouselTitle">
+                    Mountain Landscape
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- API Data Fetching -->
+        <section class="section fade-in">
+          <div class="card">
+            <h2>API Data Fetching</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666">
+              Fetch real-time data from external APIs using JavaScript
+            </p>
+
+            <div class="joke-container">
+              <div class="joke-display" id="jokeDisplay">
+                <div class="joke-text">
+                  Click the button to fetch a random joke!
+                </div>
+              </div>
+              <button class="fetch-btn" id="fetchJokeBtn" onclick="fetchJoke()">
+                Get Random Joke
+              </button>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 1rem">
+                Powered by
+                <a
+                  href="https://jokeapi.dev"
+                  target="_blank"
+                  style="color: #667eea"
+                  >JokeAPI</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>Built with modern web technologies</p>
+        <div class="tech-stack">
+          <span class="tech-item">HTML5</span>
+          <span class="tech-item">CSS3</span>
+          <span class="tech-item">JavaScript</span>
+          <span class="tech-item">Media Queries</span>
+          <span class="tech-item">Fetch API</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script3.js"></script>
+  </body>
+</html>
